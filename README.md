@@ -1,4 +1,4 @@
-#Twimba
+# Twimba
 
 This is a simple twitter feed clone, really cool project to learn a bunch of JavaScript tricks.
 
