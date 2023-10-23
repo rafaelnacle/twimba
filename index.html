@@ -12,22 +12,27 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Twimba</title>
 </head>
 
 <body>
-	<header>
-		<h1>Twimba</h1>
-	</header>
-	<main>
-		<div class="tweet-input-area">
-			<img src="./assets/images/scrimbalogo.png" class="profile-pic">
-			<textarea placeholder="What's happening?" id="tweet-input"></textarea>
-		</div>
-		<button id="tweet-btn">Tweet</button>
-		<div class="feed" id="feed">
-			<!-- Tweets here!! -->
-		</div>
-	</main>
+	<div class="container">
+		<header>
+			<h1>Twimba</h1>
+		</header>
+		<main>
+			<div class="tweet-input-area">
+				<img src="./assets/images/profile.jpg" class="profile-pic">
+				<textarea placeholder="What's happening?" id="tweet-input"></textarea>
+			</div>
+			<button id="tweet-btn">Tweet</button>
+			<div class="feed" id="feed">
+				<!-- Tweets here!! -->
+			</div>
+		</main>
+	</div>
+
 	<script src="./assets/js/index.js" type="module"></script>
 </body>
 

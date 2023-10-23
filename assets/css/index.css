@@ -1,42 +1,51 @@
-html, body {
+:root {
+    --background: #F7F7FF;
+    --primary-color: #FE5F55;
+    --secondary-color: #495867;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
 }
 
 /* typography and icons */
 
-h1{
-    color: #0F8CDF;
+h1 {
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-i{
+i {
     font-size: 15px;
     cursor: pointer;
 }
 
-.fa-solid{
+.fa-solid {
     color: #999;
 }
 
-.liked{
+.liked {
     color: red;
 }
 
 .retweeted {
-  color: limegreen;
+    color: limegreen;
 }
 
 /* layout */
 
-main, header{
+main,
+header {
     width: 290px;
     margin: 0 auto;
 }
 
-header{
+header {
     padding-bottom: 25px;
 }
 
@@ -48,7 +57,7 @@ header{
 
 /* textareas + btn */
 
-textarea{
+textarea {
     border: none;
     resize: none;
     padding: 10px;
@@ -57,15 +66,16 @@ textarea{
     width: 100%;
     font-size: 20px;
     line-height: 30px;
+    background-color: #F7F7FF;
 }
 
-button{
-    background-color: #1DA1F2;
+button {
+    background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 10px 19px;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
@@ -73,60 +83,73 @@ button{
 
 /* tweet */
 
-.tweet{
-    border-top: 1px solid lightgray;
+.tweet {
+    border-top: 1px solid #f3dedd;
     padding: 20px 0 0 0;
     width: 100%;
     margin: 15px 0;
+
+    position: relative;
 }
 
-.tweet-inner{
+.tweet-inner {
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 
-.tweet-details{
+.tweet-details {
     display: flex;
     font-size: 13px;
     justify-content: space-between;
     width: 160px;
 }
 
-.tweet-detail{
+.tweet-detail {
     display: flex;
     gap: 4px;
 }
 
-.tweet-reply{
-    border-top: 1px solid lightgray;
+.tweet-reply {
+    border-top: 1px solid #f3dedd;
     padding: 20px 0 0 0px;
     margin: 10px 0 10px 40px;
     width: 80%;
 }
 
-.handle{
+.handle {
     font-size: 12px;
     font-weight: 500;
-    color: #555;
+    color: #577399;
     margin-top: 0;
 }
 
-.tweet-text{
+.tweet-text {
     width: 207px;
     font-size: 14px;
     line-height: 20px;
+    color: #495867;
 }
 
 /* images */
 
-.profile-pic{
+.profile-pic {
     border: 1px solid lightgray;
     border-radius: 50%;
     width: 48px;
 }
 
 /* utility */
-.hidden{
+.hidden {
     display: none;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.delete-icon:hover {
+    color: #FE5F55;
 }
